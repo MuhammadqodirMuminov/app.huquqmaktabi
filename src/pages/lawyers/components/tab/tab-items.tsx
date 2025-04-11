@@ -1,4 +1,5 @@
-import { Box } from '@/components';
+import { Box, Card } from '@/components';
+import { Typography } from 'antd';
 
 export const LawyerTab1 = () => {
   return (
@@ -14,9 +15,81 @@ export const LawyerTab1 = () => {
 };
 
 export const LawyerTab2 = () => {
-  return <Box></Box>;
+  return (
+    <Box>
+      {[1, 1, 1].map((_, i) => {
+        return (
+          <Card
+            $mt="10px"
+            $mb="10px"
+            $p="10px"
+            key={i}
+            $direction="row"
+            $bg="var(--white)"
+            $gap="var(--base)"
+            $sx={{
+              borderRadius: 16,
+              maxWidth: 500,
+              width: '100%',
+              boxShadow: '2px 2px 4px 1px rgba(0,0,0,0.12)',
+            }}
+            $align="center"
+          >
+            <img
+              src="https://api.huquqmaktabi.uz/uploads/g8efc4ef72a96f29f1eb36da665d735c-blogpost.jpg"
+              width={70}
+              height={70}
+              style={{
+                borderRadius: 15,
+              }}
+            />
+            <Typography>
+              Oʻzbekiston Adliya vazirligida katta taftishchi sifatida
+              faoliyatini boshlagan
+            </Typography>
+          </Card>
+        );
+      })}
+    </Box>
+  );
 };
 
 export const LawyerTab3 = () => {
-  return <Box></Box>;
+  return (
+    <Box>
+      {[1, 1, 1].map((_, i) => {
+        return (
+          <Card
+            $mt="10px"
+            $mb="10px"
+            $p="10px"
+            key={i}
+            $direction="row"
+            $bg="var(--white)"
+            $gap="var(--base)"
+            $sx={{
+              borderRadius: 16,
+              maxWidth: 500,
+              width: '100%',
+              boxShadow: '2px 2px 4px 1px rgba(0,0,0,0.12)',
+            }}
+            $align="center"
+          >
+            <img
+              src="https://api.huquqmaktabi.uz/uploads/g8efc4ef72a96f29f1eb36da665d735c-blogpost.jpg"
+              width={70}
+              height={70}
+              style={{
+                borderRadius: 15,
+              }}
+            />
+            <Typography>
+              60 dan ortiq monografiya va darsliklar, 300 dan ortiq ilmiy
+              maqolala
+            </Typography>
+          </Card>
+        );
+      })}
+    </Box>
+  );
 };
