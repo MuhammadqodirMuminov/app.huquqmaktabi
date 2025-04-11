@@ -4,15 +4,20 @@ import { Typography } from 'antd';
 
 const History = () => {
   return (
-    <Wrapper hasBodyPadding={false} bg="#f7f7f7">
-      <Box
-        $bg="var(--white)"
-        $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-      >
-        <Back label={'Yuridik Sohalar'} />
-      </Box>
-      <Box $p='0px 20px' $gap='20px' $align='center' $direction='column'>
-        <Typography.Title style={{textAlign:"center"}}>
+    <Wrapper
+      header={
+        <Box
+          $bg="var(--white)"
+          $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
+        >
+          <Back label={'Yuridik Sohalar'} />
+        </Box>
+      }
+      hasBodyPadding={false}
+      bg="#f7f7f7"
+    >
+      <Box $p="0px 20px" $gap="20px" $align="center" $direction="column">
+        <Typography.Title style={{ textAlign: 'center' }}>
           Oʻzbekistonda yuridik soha rivojlanish tarixi
         </Typography.Title>
         <Typography.Text>

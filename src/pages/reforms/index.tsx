@@ -4,13 +4,18 @@ import { Typography } from 'antd';
 
 const Reforms = () => {
   return (
-    <Wrapper hasBodyPadding={false} bg="#f7f7f7">
-      <Box
-        $bg="var(--white)"
-        $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-      >
-        <Back label={'Yuridik Sohalar'} />
-      </Box>
+    <Wrapper
+      hasBodyPadding={false}
+      bg="#f7f7f7"
+      header={
+        <Box
+          $bg="var(--white)"
+          $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
+        >
+          <Back label={'Yuridik Sohalar'} />
+        </Box>
+      }
+    >
       <Box $p="0px 20px" $gap="20px" $align="center" $direction="column">
         <Typography.Title style={{ textAlign: 'center' }}>
           Hozirgi huquqiy islohotlar va ularning mazmun-mohiyati
