@@ -1,0 +1,1 @@
+export { default as LawyersCard } from "./lawyers-card";

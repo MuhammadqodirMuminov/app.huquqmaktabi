@@ -1,0 +1,15 @@
+export const KEYS = {
+  user: 'user',
+  lang: 'lang',
+  balance: 'balance',
+  countryCode: 'country_code',
+  welcome: 'welcome',
+  accessToken: 'access_token',
+  deviceId: 'device_id',
+  refreshToken: 'refresh_token',
+  userName: 'user_name',
+  userCountryCode: 'user_country_code',
+  typeId: 'type_id',
+  roomData: 'room_data',
+  passengers: 'passengers',
+};

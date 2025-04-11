@@ -1,0 +1,10 @@
+services:
+  web:
+    image: ghcr.io/${TAG}
+    restart: unless-stopped
+    ports:
+      - '3333:80'
+    volumes:
+      - files:/prev-app
+volumes:
+  files:

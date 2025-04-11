@@ -1,0 +1,38 @@
+{
+  "projectId": 2,
+  "apiUrl": "https://language.coreteam.uz",
+  "pull": {
+    "fileStructureTemplate": "{languageTag}/{namespace}.{extension}",
+    "path": "./public/i18n"
+  },
+  "push": {
+    "files": [
+      {
+        "path": "./public/i18n/en/auth.json",
+        "language": "en",
+        "namespace": "auth"
+      },
+      {
+        "path": "./public/i18n/en/profile.json",
+        "language": "en",
+        "namespace": "profile"
+      },
+      {
+        "path": "./public/i18n/en/services.json",
+        "language": "en",
+        "namespace": "services"
+      },
+      {
+        "path": "./public/i18n/en/tours.json",
+        "language": "en",
+        "namespace": "tours"
+      },
+      {
+        "path": "./public/i18n/en/translation.json",
+        "language": "en",
+        "namespace": "translation"
+      }
+    ],
+    "forceMode": "KEEP"
+  }
+}

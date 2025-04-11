@@ -1,0 +1,1 @@
+export { usePassengersStore } from './passengers';

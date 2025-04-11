@@ -1,0 +1,1 @@
+export { useRentalCarStore } from './rental';

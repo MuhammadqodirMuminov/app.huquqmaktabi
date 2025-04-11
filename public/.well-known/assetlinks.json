@@ -1,0 +1,30 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.coreteam.letstrip",
+      "sha256_cert_fingerprints": [
+        "1E:79:0B:1D:E3:87:6D:EB:5D:52:30:FF:D7:DA:EA:6E:8F:54:47:23:C5:F7:83:D5:87:0A:BB:FA:4F:D0:64:66",
+        "24:99:6B:A1:EF:4D:BE:94:05:BB:80:54:93:63:2D:4A:E7:7E:8F:E1:F9:FD:44:E5:16:24:A0:F1:80:93:52:45"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "web",
+      "site": "https://app.letstrip.travel"
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.coreteam.letstrip",
+      "sha256_cert_fingerprints": [
+        "1E:79:0B:1D:E3:87:6D:EB:5D:52:30:FF:D7:DA:EA:6E:8F:54:47:23:C5:F7:83:D5:87:0A:BB:FA:4F:D0:64:66"
+      ]
+    }
+  }
+]
