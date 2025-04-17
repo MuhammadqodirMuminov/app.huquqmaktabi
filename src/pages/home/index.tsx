@@ -1,25 +1,24 @@
 import { Wrapper } from '@/modules';
-import { Back, Box } from '@/components';
+import { Box } from '@/components';
 import { LegalFieldItem } from './common';
 import { MockLawField } from './constants';
-import { closeWeb } from '@/utils/connections';
 
 const Home = () => {
   return (
     <Wrapper
       hasBodyPadding={false}
       bg="#f7f7f7"
-      header={
-        <Box
-          $bg="var(--white)"
-          $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-          onClick={() => {
-            closeWeb(true);
-          }}
-        >
-          <Back label={'Yuridik Sohalar'} />
-        </Box>
-      }
+      // header={
+      //   <Box
+      //     $bg="var(--white)"
+      //     $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
+      //     onClick={() => {
+      //       closeWeb(true);
+      //     }}
+      //   >
+      //     <Back label={'Yuridik Sohalar'} />
+      //   </Box>
+      // }
     >
       <Box
         $align="center"

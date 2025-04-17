@@ -1,18 +1,18 @@
-import { Back, Box } from '@/components';
+import { Box } from '@/components';
 import { Wrapper } from '@/modules';
 import { Typography } from 'antd';
 
 const History = () => {
   return (
     <Wrapper
-      header={
-        <Box
-          $bg="var(--white)"
-          $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-        >
-          <Back label={'Yuridik Sohalar'} />
-        </Box>
-      }
+      // header={
+      //   <Box
+      //     $bg="var(--white)"
+      //     $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
+      //   >
+      //     <Back label={'Yuridik Sohalar'} />
+      //   </Box>
+      // }
       hasBodyPadding={false}
       bg="#f7f7f7"
     >
