@@ -4,14 +4,15 @@ import { getRoute } from '@/utils/general';
 import { history } from '@/utils/history';
 import { Col, Typography } from 'antd';
 
-type Props = {
+export type LawyersCardProps = {
   id: number;
   image: string;
   fullName: string;
   position: string;
+  experience?: string;
 };
 
-const LawyersCard = (item: Props) => {
+const LawyersCard = (item: LawyersCardProps) => {
   return (
     <Col span={12}>
       <Card
@@ -32,7 +33,9 @@ const LawyersCard = (item: Props) => {
             borderRadius: 50,
           }}
         />
-        <Typography.Title style={{ fontSize: 18, textAlign: 'center' }}>
+        <Typography.Title
+          style={{ fontSize: 18, textAlign: 'center', height: 40 }}
+        >
           {item.fullName}
         </Typography.Title>
         <Typography.Text style={{ textAlign: 'center' }}>

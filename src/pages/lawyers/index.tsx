@@ -5,18 +5,7 @@ import { LawyersCard } from './components';
 
 const Lawyers = () => {
   return (
-    <Wrapper
-      hasBodyPadding={false}
-      bg="#f7f7f7"
-      // header={
-      //   <Box
-      //     $bg="var(--white)"
-      //     $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-      //   >
-      //     <Back label={'Yuridik Sohalar'} />
-      //   </Box>
-      // }
-    >
+    <Wrapper hasBodyPadding={false} bg="#f7f7f7">
       <Row style={{ margin: '10px' }} gutter={[16, 16]}>
         {LawyersMockData.map((item) => (
           <LawyersCard key={item.id} {...item} />

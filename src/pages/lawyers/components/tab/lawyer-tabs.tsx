@@ -1,19 +1,12 @@
 import { Tabs } from 'antd';
 import { LawyerItems } from '../../constants';
 import { Box } from '@/components';
+import { LawyersCardProps } from '../lawyers-card';
 
-const LawyerTabs = () => {
-  const onChange = (key: string) => {
-    console.log(key);
-  };
+const LawyerTabs = (user: LawyersCardProps) => {
   return (
     <Box $align="center" $justify="center">
-      <Tabs
-        defaultActiveKey="1"
-        centered
-        items={LawyerItems}
-        onChange={onChange}
-      />
+      <Tabs defaultActiveKey="1" centered items={LawyerItems(user)} />
     </Box>
   );
 };

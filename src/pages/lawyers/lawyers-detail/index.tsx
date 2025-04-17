@@ -1,26 +1,15 @@
-import { Back, Box } from '@/components';
+import { Box } from '@/components';
 import { Wrapper } from '@/modules';
 import { Typography } from 'antd';
 import { useParams } from 'react-router-dom';
-import { LawyerTabs } from '../components';
+import { LawyersMockData } from '../constants';
 
 const LawyersDetail = () => {
   const { id } = useParams();
-  console.log(id);
+  const user = LawyersMockData.find((item) => item.id === Number(id));
 
   return (
-    <Wrapper
-      hasBodyPadding={false}
-      bg="#f7f7f7"
-      header={
-        <Box
-          $bg="var(--white)"
-          $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-        >
-          <Back label={'Yuridik Sohalar'} />
-        </Box>
-      }
-    >
+    <Wrapper hasBodyPadding={false} bg="#f7f7f7">
       <Box
         $bg="var(--white)"
         $direction="column"
@@ -36,7 +25,7 @@ const LawyersDetail = () => {
           $p="10px"
         >
           <img
-            src="https://api.huquqmaktabi.uz/uploads/g8efc4ef72a96f29f1eb36da665d735c-blogpost.jpg"
+            src={user?.image}
             width={200}
             height={200}
             style={{
@@ -44,15 +33,13 @@ const LawyersDetail = () => {
             }}
           />
           <Typography.Title style={{ fontSize: 25, textAlign: 'center' }}>
-            Muhammadqodir Muminov
+            {user?.fullName}
           </Typography.Title>
           <Typography.Text style={{ textAlign: 'center' }}>
-            Software enganer, fullstack developer
+            {user?.position}
           </Typography.Text>
         </Box>
-        <Box>
-          <LawyerTabs />
-        </Box>
+        <Box $p="42px">{user?.experience}</Box>
       </Box>
     </Wrapper>
   );
