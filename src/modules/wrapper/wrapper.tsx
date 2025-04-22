@@ -103,8 +103,6 @@ export const Wrapper = ({
         </Body>
       )}
 
-
-
       {footer && (
         <Box as={Footer} $mt="auto" $sx={footerStyle}>
           {footer}

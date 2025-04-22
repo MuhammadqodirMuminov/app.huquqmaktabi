@@ -1,5 +1,6 @@
-import { Box, Card } from '@/components';
 import { Typography } from 'antd';
+
+import { Box, Card } from '@/components';
 
 export const LawyerTab1 = () => {
   return (

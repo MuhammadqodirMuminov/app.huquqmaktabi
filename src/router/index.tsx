@@ -1,9 +1,10 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 
+import { History, Lawyers, LawyersDetail, Reforms } from './loadable';
+
 import { Layout } from '@/modules';
 import { ROUTES } from '@/constants';
 import Home from '@/pages/home';
-import { History, Lawyers, LawyersDetail, Reforms } from './loadable';
 
 const Router = () => {
   return useRoutes([

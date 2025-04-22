@@ -1,8 +1,9 @@
+import { Col, Typography } from 'antd';
+
 import { Card } from '@/components';
 import { ROUTES } from '@/constants';
 import { getRoute } from '@/utils/general';
 import { history } from '@/utils/history';
-import { Col, Typography } from 'antd';
 
 export type LawyersCardProps = {
   id: number;

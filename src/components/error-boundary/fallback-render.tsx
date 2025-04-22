@@ -30,7 +30,6 @@ const FallbackRender = () => {
       $width="100svw"
       $p="20px"
     >
-
       <Typography.Title level={4}>{t('error-page.text')}</Typography.Title>
 
       <Button

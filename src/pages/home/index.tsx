@@ -1,7 +1,8 @@
-import { Wrapper } from '@/modules';
-import { Box } from '@/components';
 import { LegalFieldItem } from './common';
 import { MockLawField } from './constants';
+
+import { Wrapper } from '@/modules';
+import { Box } from '@/components';
 
 const Home = () => {
   return (

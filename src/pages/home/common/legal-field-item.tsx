@@ -1,6 +1,7 @@
+import { Typography } from 'antd';
+
 import { Card } from '@/components';
 import { history } from '@/utils/history';
-import { Typography } from 'antd';
 
 type Props = {
   id: number;

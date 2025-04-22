@@ -1,6 +1,8 @@
-import { Box } from '@/components';
 import { TabsProps } from 'antd';
+
 import { LawyersCardProps } from './components/lawyers-card';
+
+import { Box } from '@/components';
 
 export const LawyersMockData = [
   {

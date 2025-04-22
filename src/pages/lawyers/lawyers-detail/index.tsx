@@ -1,8 +1,10 @@
-import { Box } from '@/components';
-import { Wrapper } from '@/modules';
 import { Typography } from 'antd';
 import { useParams } from 'react-router-dom';
+
 import { LawyersMockData } from '../constants';
+
+import { Wrapper } from '@/modules';
+import { Box } from '@/components';
 
 const LawyersDetail = () => {
   const { id } = useParams();

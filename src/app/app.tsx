@@ -23,7 +23,6 @@ dayjs.updateLocale('en', {
 
 const Router = lazy(() => import('@/router'));
 
-
 export const App = () => {
   useLang();
 
@@ -31,11 +30,11 @@ export const App = () => {
     <ThemeProvider>
       <QueryProvider>
         <ErrorBoundary>
-            <HistoryRouterProvider history={history}>
-              <Suspense fallback={<Loading isFull />}>
-                <Router />
-              </Suspense>
-            </HistoryRouterProvider>
+          <HistoryRouterProvider history={history}>
+            <Suspense fallback={<Loading isFull />}>
+              <Router />
+            </Suspense>
+          </HistoryRouterProvider>
         </ErrorBoundary>
       </QueryProvider>
     </ThemeProvider>

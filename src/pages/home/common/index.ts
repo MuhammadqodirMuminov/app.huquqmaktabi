@@ -1,1 +1,1 @@
-export * from "./legal-field-item"
+export * from './legal-field-item';

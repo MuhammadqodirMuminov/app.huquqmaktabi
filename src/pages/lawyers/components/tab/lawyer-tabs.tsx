@@ -1,7 +1,9 @@
 import { Tabs } from 'antd';
+
 import { LawyerItems } from '../../constants';
-import { Box } from '@/components';
 import { LawyersCardProps } from '../lawyers-card';
+
+import { Box } from '@/components';
 
 const LawyerTabs = (user: LawyersCardProps) => {
   return (

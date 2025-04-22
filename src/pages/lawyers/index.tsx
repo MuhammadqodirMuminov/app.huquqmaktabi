@@ -1,7 +1,9 @@
-import { Wrapper } from '@/modules';
 import { Row } from 'antd';
+
 import { LawyersMockData } from './constants';
 import { LawyersCard } from './components';
+
+import { Wrapper } from '@/modules';
 
 const Lawyers = () => {
   return (

@@ -1,6 +1,7 @@
+import { Typography } from 'antd';
+
 import { Box } from '@/components';
 import { Wrapper } from '@/modules';
-import { Typography } from 'antd';
 
 const History = () => {
   return (
