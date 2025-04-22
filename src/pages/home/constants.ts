@@ -13,11 +13,11 @@ export const MockLawField = [
       'https://api.huquqmaktabi.uz/uploads/g8efc4ef72a96f29f1eb36da665d735c-blogpost.jpg',
     route: '/reforms',
   },
-  {
-    id: 3,
-    title: 'Taniqli huquqshunoslar va ularning huquq ilmidagi hissasi',
-    image:
-      'https://api.huquqmaktabi.uz/uploads/g8efc4ef72a96f29f1eb36da665d735c-blogpost.jpg',
-    route: '/lawyers',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Taniqli huquqshunoslar va ularning huquq ilmidagi hissasi',
+  //   image:
+  //     'https://api.huquqmaktabi.uz/uploads/g8efc4ef72a96f29f1eb36da665d735c-blogpost.jpg',
+  //   route: '/lawyers',
+  // },
 ];
