@@ -42,13 +42,11 @@ const LawyersDetail = () => {
           </Typography.Text>
         </Box>
         <Box
-          $p="42px"
+          $p="10px"
           dangerouslySetInnerHTML={{
             __html: user?.experience as string,
           }}
-        >
-          {/* {user?.experience} */}
-        </Box>
+        ></Box>
       </Box>
     </Wrapper>
   );

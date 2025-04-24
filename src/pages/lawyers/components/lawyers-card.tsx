@@ -39,7 +39,7 @@ const LawyersCard = (item: LawyersCardProps) => {
         >
           {item.fullName}
         </Typography.Title>
-        <Typography.Text style={{ textAlign: 'center' }}>
+        <Typography.Text style={{ textAlign: 'center', height: 40 }}>
           {item.position}
         </Typography.Text>
       </Card>
