@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 
 import { LawyersMockData } from '../constants';
 
-import { Wrapper } from '@/modules';
 import { Box } from '@/components';
+import { Wrapper } from '@/modules';
 
 const LawyersDetail = () => {
   const { id } = useParams();
@@ -41,7 +41,14 @@ const LawyersDetail = () => {
             {user?.position}
           </Typography.Text>
         </Box>
-        <Box $p="42px">{user?.experience}</Box>
+        <Box
+          $p="42px"
+          dangerouslySetInnerHTML={{
+            __html: user?.experience as string,
+          }}
+        >
+          {/* {user?.experience} */}
+        </Box>
       </Box>
     </Wrapper>
   );
