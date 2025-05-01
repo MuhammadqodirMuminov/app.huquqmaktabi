@@ -6,21 +6,7 @@ import { Box } from '@/components';
 
 const Home = () => {
   return (
-    <Wrapper
-      hasBodyPadding={false}
-      bg="#f7f7f7"
-      // header={
-      //   <Box
-      //     $bg="var(--white)"
-      //     $sx={{ borderBottomLeftRadius: 16, borderBottomRightRadius: 16 }}
-      //     onClick={() => {
-      //       closeWeb(true);
-      //     }}
-      //   >
-      //     <Back label={'Yuridik Sohalar'} />
-      //   </Box>
-      // }
-    >
+    <Wrapper hasBodyPadding={false} bg="#f7f7f7">
       <Box
         $align="center"
         $direction="column"
