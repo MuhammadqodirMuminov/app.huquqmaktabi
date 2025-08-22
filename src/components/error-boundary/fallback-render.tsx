@@ -1,5 +1,4 @@
 import { Button, Typography } from 'antd';
-import { useTranslation } from 'react-i18next';
 import { useQueryClient } from '@tanstack/react-query';
 
 import { Box } from '../box';
@@ -7,7 +6,6 @@ import { Box } from '../box';
 export const fallbackRender = () => <FallbackRender />;
 
 const FallbackRender = () => {
-  const { t } = useTranslation();
   const queryClient = useQueryClient();
 
   const handleGoBack = () => {
@@ -30,7 +28,7 @@ const FallbackRender = () => {
       $width="100svw"
       $p="20px"
     >
-      <Typography.Title level={4}>{t('error-page.text')}</Typography.Title>
+      <Typography.Title level={4}>{'Something went wrong!'}</Typography.Title>
 
       <Button
         onClick={handleReload}
@@ -39,7 +37,7 @@ const FallbackRender = () => {
           width: '100%',
         }}
       >
-        {t('error-page.reload')}
+        Reload
       </Button>
 
       <Button
@@ -48,7 +46,7 @@ const FallbackRender = () => {
           width: '100%',
         }}
       >
-        {t('error-page.back')}
+        Back to main
       </Button>
     </Box>
   );
